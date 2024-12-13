@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght,GRAD@1,8..144,500,24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  /* header starts  */
+  .container-discount {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .container-discount h4 {
+    display: inline-block;
+    padding: 9px;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .container-discount i {
+    padding: 0px 70px;
+  }
+
+  .container-navigation nav {
+    display: flex;
+    font-family: "Roboto", serif;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0px;
+  }
+  .container-navigation h1 {
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 60px;
+    padding-left: -20px;
+  }
+  .container-navigation ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .container-navigation ul li {
+    padding-right: 20px;
+    color: rgb(29, 29, 29);
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .container-navigation ul li:hover {
+    transform: translateY(-7px);
+    transition: 1s;
+    cursor: pointer;
+  }
+  /* the header ends  */
+
+  /* the hero-section starts  */
+
+  .container-imageText img {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  /* the hero-section ends  */
+
+  /* the menu-section starts  */
+  .container-menu {
+    text-align: center;
+    margin: 4rem auto;
+  }
+  .container-menu h1 {
+    font-family: "raleway", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .product {
+    display: none;
+  }
+  .product li a {
+    color: black;
+    transition: 5s;
+  }
+  .container-menu :hover .product {
+    display: block;
+  }
+  .imageArea {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+
+  .image-one {
+    height: auto;
+    margin: 5px;
+  }
+  .image-one img {
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+  }
+
+  .image-one h4,
+  p {
+    font-family: "poppins", serif;
+    font-weight: 300;
+    text-align: start;
+    padding: 1px;
+    margin: 9px;
+  }
+
+  .image-one button {
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: 600ms;
+  }
+  .image-one button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  .shopping-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .shopping-btn a {
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 3rem;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: 600ms;
+    color: black;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .shopping-btn a:hover {
+    color: white;
+    background-color: black;
+    border: none;
+  }
+  .banner {
+    width: 100%;
+    border: 1px solid;
+  }
+  .banner img {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+  .hoodies {
+    padding-bottom: 5rem;
+    margin-top: 1rem;
+  }
+
+  .animation {
+    padding: 1rem;
+    position: relative;
+    white-space: nowrap;
+    border: 2px solid rgba(128, 128, 128, 0.116);
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+  .animation h1 {
+    font-family: "montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    word-spacing: 20px;
+    letter-spacing: 0.55rem;
+    width: 100%;
+    position: absolute;
+    animation: typing steps(400) 500ms infinite alternate;
+    overflow: hidden;
+    margin-left: 10rem;
+    color: rgba(0, 0, 0, 0.636);
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
+  }
+
+  /* testimonial section starts  */
+  .testimonial-section {
+    margin-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.074);
+    margin-top: 20px;
+    padding-left: 26px;
+  }
+  #name {
+    font-family: "inter", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-top: 4rem;
+    padding-left: 2rem;
+  }
+  .testimonial-menus {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .menu {
+    border-radius: 10px;
+    width: 100%;
+    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    align-content: center;
+    transition: 1s;
+  }
+  .testimonial-menus :hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 12px 12px 9px rgba(128, 128, 128, 0.227);
+  }
+  .menu img {
+    padding: -9px;
+    margin: 0px;
+    width: 6rem;
+    margin-top: -19px;
+    padding-left: 20px;
+  }
+  .menu h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "inter", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+  .menu h2 {
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: "inter", sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+  .menu p {
+    font-family: "poppins";
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.542);
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  /* testimonial-section ends  */
+  /* links for instagram */
+  .container-insta {
+    margin: 2rem 0px;
+  }
+  .insta {
+    padding: 3rem;
+  }
+
+  .insta h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 2rem;
+  }
+  .insta p {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 750px;
+    margin-left: 22rem;
+    margin-top: -10px;
+    padding: 6px;
+    line-height: 1.4rem;
+  }
+
+  .insta p span {
+    text-decoration: underline;
+  }
+  .new {
+    display: flex;
+    justify-content: space-evenly;
+    padding: none;
+    margin: 1rem;
+  }
+  .newone {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .newone h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: start;
+    padding-left: 0.55rem;
+  }
+
+  .newone p {
+    width: 200px;
+    font-family: "montserrat", sans-serif;
+    text-align: start;
+  }
+  /* end for instagram page link  */
+  /* footer-starts  */
+  .footer-main {
+    display: flex;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.074);
+  }
+  .footer-content {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .footer-content h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  .footer-content ul {
+    text-align: center;
+    text-transform: capitalize;
+    color: #0000007d;
+    font-family: "poppins";
+    font-size: 15px;
+  }
+  .footer-content li {
+    line-height: 29px;
+    position: relative;
+  }
+  .footer-content li:hover {
+    text-decoration: underline;
+    padding-bottom: 1px;
+    transition: 2s linear;
+  }
+  .what {
+    display: flex;
+  }
+  .fa {
+    padding: 10px;
+    margin: 2px;
+    width: 10%;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 9px;
+    border: none;
+  }
+  /* the footer-ends  */
+}
